@@ -1,0 +1,33 @@
+### Obtener los clientes
+GET http://localhost:3000/api/clients
+### Agregar un cliente
+POST http://localhost:3000/api/client
+Content-Type: application/json
+
+{
+    "emailRequest": "prueba@gmail.com",
+    "nameRequest": "David",
+    "lastnameRequest": "Alvarado",
+    "phoneNumberRequest": 6639
+}
+
+### Obtener un cliente
+GET http://localhost:3000/api/client/david@gmail.com
+
+### Obtener las actividades
+GET http://localhost:3000/api/activities 
+
+### Agregar una actividad
+POST http://localhost:3000/api/activity
+Content-Type: application/json
+
+{
+    "nameRequest": "Caminar",
+    "descriptionRequest": "Caminar por la playa",
+    "dateRequest": "2021-10-10",
+    "clientEmailRequest": "david@gmail.com",
+    "descriptionRequest": "Caminar por la playa"
+}
+
+### Obtener las actividades de un cliente
+GET http://localhost:3000/api/activity/1
